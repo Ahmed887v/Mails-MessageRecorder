@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#1565C0</color>
+    <color name="surface_dark">#101418</color>
+    <color name="surface_light">#F7F9FC</color>
+    <string name="account_cloned">حساب مزدوج (%1$s)</string>
+    <string name="account_primary">حساب أساسي</string>
+    <string name="app_name">NewRecorder</string>
+    <string name="channel_alerts_desc">ملخصات الرسائل غير المقروءة</string>
+    <string name="channel_alerts_name">التنبيهات</string>
+    <string name="channel_persistent_desc">إشعار دائم يبقي التقاط الرسائل يعمل في الخلفية</string>
+    <string name="channel_persistent_name">الخدمة المستمرة</string>
+    <string name="notification_listener_label">NewRecorder — قارئ الإشعارات</string>
+    <string name="service_running">يراقب الرسائل والتنبيهات الواردة…</string>
+    <style name="Theme.NewRecorder" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/surface_light</item>
+    </style>
+</resources>

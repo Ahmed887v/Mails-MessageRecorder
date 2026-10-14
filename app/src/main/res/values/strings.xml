@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewRecorder</string>
+    <string name="notification_listener_label">NewRecorder — قارئ الإشعارات</string>
+
+    <string name="channel_persistent_name">الخدمة المستمرة</string>
+    <string name="channel_persistent_desc">إشعار دائم يبقي التقاط الرسائل يعمل في الخلفية</string>
+    <string name="channel_alerts_name">التنبيهات</string>
+    <string name="channel_alerts_desc">ملخصات الرسائل غير المقروءة</string>
+
+    <string name="service_running">يراقب الرسائل والتنبيهات الواردة…</string>
+
+    <string name="account_primary">حساب أساسي</string>
+    <string name="account_cloned">حساب مزدوج (%1$s)</string>
+</resources>

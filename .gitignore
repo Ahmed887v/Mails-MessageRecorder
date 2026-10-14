@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+**/build/
+captures/
+local.properties
+
+# Android Studio / IDE
+.idea/
+*.iml
+.DS_Store
+
+# Keystores and secrets
+*.jks
+*.keystore
+
+# Native
+.externalNativeBuild/
+.cxx/
+
+# Outputs
+*.apk
+
+# أدوات البناء المحلية (لا تُرفع إلى GitHub، لكنها تُضمَّن داخل الحزمة الكاملة pack_release.sh)
+android-sdk/
+gradle-8.7/
+.gradle-home/
+env.sh
+
+# الحزم المضغوطة (يُبنى آخر إصدار على الجهاز، لا يُرفع)
+*.zip

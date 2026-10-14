@@ -1,0 +1,493 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.newrecorder.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Network (Gmail IMAP + OAuth) -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:7:22-76
+14
+15    <!-- SMS capture -->
+16    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+16-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:10:5-70
+16-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:10:22-67
+17    <uses-permission android:name="android.permission.READ_SMS" />
+17-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:11:5-67
+17-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:11:22-64
+18
+19    <!-- Notifications + background survival -->
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:14:5-77
+20-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:14:22-74
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:15:5-77
+21-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:15:22-74
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+22-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:16:5-87
+22-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:16:22-84
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:17:5-68
+23-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:17:22-65
+24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+24-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:18:5-81
+24-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:18:22-78
+25    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+25-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:19:5-95
+25-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:19:22-92
+26
+27    <!--
+28         Needed to resolve source app name/icons (incl. cloned apps) for notifications.
+29         This is a sideloaded/local-first app; remove if publishing on Google Play.
+30    -->
+31    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+31-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:23:5-25:53
+31-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:24:9-61
+32
+33    <queries>
+33-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:24:5-32:15
+34        <intent>
+34-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:25:9-31:18
+35            <action android:name="android.intent.action.VIEW" />
+35-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:92:17-69
+35-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:92:25-66
+36
+37            <category android:name="android.intent.category.BROWSABLE" />
+37-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:94:17-78
+37-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:94:27-75
+38
+39            <data android:scheme="https" />
+39-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:95:17-62
+39-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:95:23-59
+40        </intent>
+41    </queries>
+42
+43    <permission
+43-->[androidx.core:core:1.13.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+44        android:name="com.newrecorder.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.13.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.13.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.newrecorder.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.13.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.13.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:27:5-99:19
+50        android:name="com.newrecorder.app.NewRecorderApp"
+50-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:28:9-39
+51        android:allowBackup="true"
+51-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:29:9-35
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.13.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+53        android:dataExtractionRules="@xml/data_extraction_rules"
+53-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:30:9-65
+54        android:debuggable="true"
+55        android:extractNativeLibs="false"
+56        android:fullBackupContent="@xml/backup_rules"
+56-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:31:9-54
+57        android:icon="@mipmap/ic_launcher"
+57-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:32:9-43
+58        android:label="@string/app_name"
+58-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:33:9-41
+59        android:roundIcon="@mipmap/ic_launcher_round"
+59-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:34:9-54
+60        android:supportsRtl="true"
+60-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:35:9-35
+61        android:theme="@style/Theme.NewRecorder" >
+61-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:36:9-49
+62        <activity
+62-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:39:9-48:20
+63            android:name="com.newrecorder.app.MainActivity"
+63-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:40:13-41
+64            android:exported="true"
+64-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:41:13-36
+65            android:label="@string/app_name"
+65-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:42:13-45
+66            android:theme="@style/Theme.NewRecorder" >
+66-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:43:13-53
+67            <intent-filter>
+67-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:44:13-47:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:45:17-69
+68-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:45:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:46:17-77
+70-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:46:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <!-- Reads every notification posted on the device (WhatsApp, Messenger, Instagram...) -->
+75        <service
+75-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:51:9-59:19
+76            android:name="com.newrecorder.app.service.NotificationCollectorService"
+76-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:52:13-65
+77            android:exported="false"
+77-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:53:13-37
+78            android:label="@string/notification_listener_label"
+78-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:54:13-64
+79            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+79-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:55:13-87
+80            <intent-filter>
+80-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:56:13-58:29
+81                <action android:name="android.service.notification.NotificationListenerService" />
+81-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:57:17-99
+81-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:57:25-96
+82            </intent-filter>
+83        </service>
+84
+85        <!-- Instant SMS capture -->
+86        <receiver
+86-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:62:9-69:20
+87            android:name="com.newrecorder.app.service.SmsReceiver"
+87-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:63:13-48
+88            android:exported="true"
+88-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:64:13-36
+89            android:permission="android.permission.BROADCAST_SMS" >
+89-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:65:13-66
+90            <intent-filter android:priority="999" >
+90-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:66:13-68:29
+90-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:66:28-50
+91                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+91-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:67:17-82
+91-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:67:25-79
+92            </intent-filter>
+93        </receiver>
+94
+95        <!-- Restart the persistent sync service after reboot -->
+96        <receiver
+96-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:72:9-78:20
+97            android:name="com.newrecorder.app.service.BootReceiver"
+97-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:73:13-49
+98            android:exported="true" >
+98-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:74:13-36
+99            <intent-filter>
+99-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:75:13-77:29
+100                <action android:name="android.intent.action.BOOT_COMPLETED" />
+100-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:76:17-79
+100-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:76:25-76
+101            </intent-filter>
+102        </receiver>
+103
+104        <!-- Persistent foreground service: keeps IMAP IDLE + collectors alive -->
+105        <service
+105-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:81:9-84:56
+106            android:name="com.newrecorder.app.service.SyncService"
+106-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:82:13-48
+107            android:exported="false"
+107-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:83:13-37
+108            android:foregroundServiceType="dataSync" />
+108-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:84:13-53
+109
+110        <!-- Receives the OAuth 2.0 redirect back from Google (AppAuth) -->
+111        <activity
+111-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:87:9-97:20
+112            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+112-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:88:13-74
+113            android:exported="true" >
+113-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:89:13-36
+114            <intent-filter>
+114-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:91:13-96:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:92:17-69
+115-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:92:25-66
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:93:17-76
+117-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:93:27-73
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:94:17-78
+118-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:94:27-75
+119
+120                <data android:scheme="com.newrecorder.app" />
+120-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:95:17-62
+120-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:95:23-59
+121            </intent-filter>
+122        </activity>
+123
+124        <provider
+124-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
+125            android:name="androidx.startup.InitializationProvider"
+125-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:30:13-67
+126            android:authorities="com.newrecorder.app.androidx-startup"
+126-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:31:13-68
+127            android:exported="false" >
+127-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:32:13-37
+128            <meta-data
+128-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:34:13-36:52
+129                android:name="androidx.work.WorkManagerInitializer"
+129-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:35:17-68
+130                android:value="androidx.startup" />
+130-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:36:17-49
+131            <meta-data
+131-->[androidx.emoji2:emoji2:1.3.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+132-->[androidx.emoji2:emoji2:1.3.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+133                android:value="androidx.startup" />
+133-->[androidx.emoji2:emoji2:1.3.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+134            <meta-data
+134-->[androidx.lifecycle:lifecycle-process:2.8.4] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+135                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+135-->[androidx.lifecycle:lifecycle-process:2.8.4] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+136                android:value="androidx.startup" />
+136-->[androidx.lifecycle:lifecycle-process:2.8.4] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+137            <meta-data
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+138                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+139                android:value="androidx.startup" />
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+140        </provider>
+141
+142        <service
+142-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:39:9-45:35
+143            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+143-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:40:13-88
+144            android:directBootAware="false"
+144-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:41:13-44
+145            android:enabled="@bool/enable_system_alarm_service_default"
+145-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:42:13-72
+146            android:exported="false" />
+146-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:43:13-37
+147        <service
+147-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:46:9-52:35
+148            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+148-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:47:13-84
+149            android:directBootAware="false"
+149-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:48:13-44
+150            android:enabled="@bool/enable_system_job_service_default"
+150-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:49:13-70
+151            android:exported="true"
+151-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:50:13-36
+152            android:permission="android.permission.BIND_JOB_SERVICE" />
+152-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:51:13-69
+153        <service
+153-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:53:9-59:35
+154            android:name="androidx.work.impl.foreground.SystemForegroundService"
+154-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:54:13-81
+155            android:directBootAware="false"
+155-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:55:13-44
+156            android:enabled="@bool/enable_system_foreground_service_default"
+156-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:56:13-77
+157            android:exported="false" />
+157-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:57:13-37
+158
+159        <receiver
+159-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:61:9-66:35
+160            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+160-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:62:13-88
+161            android:directBootAware="false"
+161-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:63:13-44
+162            android:enabled="true"
+162-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:64:13-35
+163            android:exported="false" />
+163-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:65:13-37
+164        <receiver
+164-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:67:9-77:20
+165            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+165-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:68:13-106
+166            android:directBootAware="false"
+166-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:69:13-44
+167            android:enabled="false"
+167-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:70:13-36
+168            android:exported="false" >
+168-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:71:13-37
+169            <intent-filter>
+169-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:73:13-76:29
+170                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+170-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:17-87
+170-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:25-84
+171                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+171-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:17-90
+171-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:25-87
+172            </intent-filter>
+173        </receiver>
+174        <receiver
+174-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:78:9-88:20
+175            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+175-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:79:13-104
+176            android:directBootAware="false"
+176-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:80:13-44
+177            android:enabled="false"
+177-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:81:13-36
+178            android:exported="false" >
+178-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:82:13-37
+179            <intent-filter>
+179-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:84:13-87:29
+180                <action android:name="android.intent.action.BATTERY_OKAY" />
+180-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:17-77
+180-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:25-74
+181                <action android:name="android.intent.action.BATTERY_LOW" />
+181-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:17-76
+181-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:25-73
+182            </intent-filter>
+183        </receiver>
+184        <receiver
+184-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:89:9-99:20
+185            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+185-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:90:13-104
+186            android:directBootAware="false"
+186-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:91:13-44
+187            android:enabled="false"
+187-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:92:13-36
+188            android:exported="false" >
+188-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:93:13-37
+189            <intent-filter>
+189-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:95:13-98:29
+190                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+190-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:17-83
+190-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:25-80
+191                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+191-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:17-82
+191-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:25-79
+192            </intent-filter>
+193        </receiver>
+194        <receiver
+194-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:100:9-109:20
+195            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+195-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:101:13-103
+196            android:directBootAware="false"
+196-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:102:13-44
+197            android:enabled="false"
+197-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:103:13-36
+198            android:exported="false" >
+198-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:104:13-37
+199            <intent-filter>
+199-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:106:13-108:29
+200                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+200-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:17-79
+200-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:25-76
+201            </intent-filter>
+202        </receiver>
+203        <receiver
+203-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:110:9-121:20
+204            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+204-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:111:13-88
+205            android:directBootAware="false"
+205-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:112:13-44
+206            android:enabled="false"
+206-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:113:13-36
+207            android:exported="false" >
+207-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:114:13-37
+208            <intent-filter>
+208-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:116:13-120:29
+209                <action android:name="android.intent.action.BOOT_COMPLETED" />
+209-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:76:17-79
+209-->/home/testuser/الموسيقى/NewRecorder/app/src/main/AndroidManifest.xml:76:25-76
+210                <action android:name="android.intent.action.TIME_SET" />
+210-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:17-73
+210-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:25-70
+211                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+211-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:17-81
+211-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:25-78
+212            </intent-filter>
+213        </receiver>
+214        <receiver
+214-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:122:9-131:20
+215            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+215-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:123:13-99
+216            android:directBootAware="false"
+216-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:124:13-44
+217            android:enabled="@bool/enable_system_alarm_service_default"
+217-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:125:13-72
+218            android:exported="false" >
+218-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:126:13-37
+219            <intent-filter>
+219-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:128:13-130:29
+220                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+220-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:17-98
+220-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:25-95
+221            </intent-filter>
+222        </receiver>
+223        <receiver
+223-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:132:9-142:20
+224            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+224-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:133:13-78
+225            android:directBootAware="false"
+225-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:134:13-44
+226            android:enabled="true"
+226-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:135:13-35
+227            android:exported="true"
+227-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:136:13-36
+228            android:permission="android.permission.DUMP" >
+228-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:137:13-57
+229            <intent-filter>
+229-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:139:13-141:29
+230                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+230-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:17-88
+230-->[androidx.work:work-runtime:2.9.0] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/366b2393d7b8d681510b125e24503721/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:25-85
+231            </intent-filter>
+232        </receiver>
+233
+234        <activity
+234-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:35:9-40:77
+235            android:name="net.openid.appauth.AuthorizationManagementActivity"
+235-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:36:13-78
+236            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboard|keyboardHidden"
+236-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:37:13-115
+237            android:exported="false"
+237-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:38:13-37
+238            android:launchMode="singleTask"
+238-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:39:13-44
+239            android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar" />
+239-->[net.openid:appauth:0.11.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/2d82c742d797c3b9faa3ed48d68f9c30/transformed/appauth-0.11.1/AndroidManifest.xml:40:13-74
+240
+241        <service
+241-->[androidx.room:room-runtime:2.6.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+242            android:name="androidx.room.MultiInstanceInvalidationService"
+242-->[androidx.room:room-runtime:2.6.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+243            android:directBootAware="true"
+243-->[androidx.room:room-runtime:2.6.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+244            android:exported="false" />
+244-->[androidx.room:room-runtime:2.6.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+245
+246        <receiver
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+247            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+248            android:directBootAware="false"
+248-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+249            android:enabled="true"
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+250            android:exported="true"
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+251            android:permission="android.permission.DUMP" >
+251-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+252            <intent-filter>
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+253                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+254            </intent-filter>
+255            <intent-filter>
+255-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+256                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+257            </intent-filter>
+258            <intent-filter>
+258-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+259                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+259-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+259-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+260            </intent-filter>
+261            <intent-filter>
+261-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+262                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+262-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+262-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/testuser/الموسيقى/NewRecorder/.gradle-home/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+263            </intent-filter>
+264        </receiver>
+265    </application>
+266
+267</manifest>
